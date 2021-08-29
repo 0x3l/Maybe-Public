@@ -12,14 +12,14 @@ REG ADD "HKEY_CURRENT_USER\Control Panel\International" /V sShortDate /T REG_SZ 
 
 :: Delete
 
-del /f "C:\Users\Public\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
+del /f "%userprofile%\Desktop\Microsoft Edge.lnk" > out.txt 2>&1
 
 :: Curl
 
 cd /d C:\
 mkdir TEMP_Downloads
 cd TEMP_Downloads
-curl -O https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x86
+curl -O https://cdn.discordapp.com/attachments/881361225756332032/881592855406186536/DiscordSetup.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881584551917412423/RobloxPlayerLauncher.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881589194953203782/Parsec.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881584881925230632/7z.exe
@@ -34,6 +34,7 @@ REG ADD "HKEY_CURRENT_USER\Control Panel\Desktop" /V WallPaper /T REG_SZ /D "C:\
 
 :: Auto-Run
 
+DiscordSetup.exe
 Radmin_VPN.exe
 RAdmin.txt
 7z.exe

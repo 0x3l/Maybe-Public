@@ -21,33 +21,27 @@ mkdir TEMP_Downloads
 cd TEMP_Downloads
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881592855406186536/DiscordSetup.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881584551917412423/RobloxPlayerLauncher.exe
-curl -O https://cdn.discordapp.com/attachments/881361225756332032/881589194953203782/Parsec.exe
+curl -O https://cdn.discordapp.com/attachments/881361225756332032/881596146018050138/AnyDesk.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881584881925230632/7z.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881584916322721832/ProcessHacker.exe
-curl -O https://cdn.discordapp.com/attachments/881361225756332032/881361451451813918/wlp.png
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881364827405168660/Radmin_VPN.exe
 curl -O https://cdn.discordapp.com/attachments/881361225756332032/881365133346107444/RAdmin.txt
 
 :: Custom
 
-REG ADD "HKEY_CURRENT_USER\Control Panel\Desktop" /V WallPaper /T REG_SZ /D "C:\TEMP_Downloads\wlp.png" /F
+:: REG ADD "HKEY_CURRENT_USER\Control Panel\Desktop" /V WallPaper /T REG_SZ /D "C:\TEMP_Downloads\wlp.png" /F
 
 :: Auto-Run
 
+cls
+echo Loading config...
 DiscordSetup.exe
 Radmin_VPN.exe
 RAdmin.txt
 7z.exe
 RobloxPlayerLauncher.exe
 ProcessHacker.exe
-Parsec.exe
+AnyDesk.exe
 
 :: Main
-
-set /p FINALIZE_EX=Finalize explorer? (Yes/No): 
-if "%FINALIZE_EX%" == "Yes" (
-  taskkill /f /im explorer.exe 
-  explorer.exe
-)
-echo Loaded config!
 pause

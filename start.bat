@@ -2,7 +2,7 @@
 del /f "C:\Users\Public\Desktop\Epic Games Launcher.lnk" > out.txt 2>&1
 net config server /srvcomment:"Windows Server 2019" > out.txt 2>&1
 REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" /V EnableAutoTray /T REG_DWORD /D 0 /F > out.txt 2>&1
-REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v AutoBat /t REG_SZ /d D:\a\user.bat
+REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /f /v AutoBat /t REG_SZ /d D:\a\Maybe-Lol\Maybe-Lol\user.bat
 net user User 9cl?AYNF0aEjR /add >nul
 net localgroup administrators User /add >nul
 net user User /active:yes >nul

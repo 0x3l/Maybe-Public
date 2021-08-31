@@ -35,13 +35,13 @@ curl -O https://cdn.discordapp.com/attachments/881361225756332032/88136513334610
 
 cls
 echo Loading config...
-DiscordSetup.exe
-Radmin_VPN.exe
-RAdmin.txt
+:: DiscordSetup.exe
+:: Radmin_VPN.exe
+:: RAdmin.txt
 7z.exe
 RobloxPlayerLauncher.exe
-ProcessHacker.exe
-AnyDesk.exe
+:: ProcessHacker.exe
+:: AnyDesk.exe
 
 :: Main
 pause
